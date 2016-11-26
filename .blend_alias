@@ -1,7 +1,0 @@
-alias borrowerapp="DEPLOYMENT=blend-borrower NODE_ENV=dev npm start"
-alias devsftp='sftp -i ~/.ssh/blendeast.pem ubuntu@10.10.3.33'
-alias sandbox='ssh -i ~/.ssh/blendeast.pem ubuntu@jenkins.sandbox.blendlabs.com'
-alias gosmoothie='psql -h "sandbox-nadav.cbkqvuvbsrsi.us-west-1.rds.amazonaws.com" -U root -d sandbox_smoothie'
-alias devmongo='mongo -u admin --authenticationDatabase admin -p baileydog461 mongodb-00.sandbox.blendlabs.com/blend-borrower_master_centrio'
-alias inituser="export API_USER_PASSWORD=S3cr3tAPIKey! API_USER=init-user@internal.blendlabs.com CANONICAL_HOST_URL=https://blend-borrower-staging.sandbox.centrio.com"
-alias devvpn='sudo /usr/local/Cellar/openvpn/2.3.7/sbin/openvpn ~/Downloads/devclient.ovpn'
