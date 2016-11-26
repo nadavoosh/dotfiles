@@ -30,3 +30,15 @@ ln -sfv "$DOTFILES_DIR/runcom/prompt" ~/.prompt
 echo "Setting up vim..."
 ln -sfv "$DOTFILES_DIR/vimrc" ~/.vimrc
 
+export VUNDLE_PATH="$HOME/.vim/bundle/Vundle.vim"
+if [ ! -e $VUNDLE_PATH ]; then
+  echo "Cloning vundle"
+  git clone https://github.com/VundleVim/Vundle.vim.git $VUNDLE_PATH
+fi 
+
+export VIM_SOLARIZED_PATH="$HOME/.vim/bundle/vim-colors-solarized"
+if [ ! -e $VIM_SOLARIZED_PATH ]; then
+  echo "Cloning vim solarized"
+  git clone git://github.com/altercation/vim-colors-solarized.git $VIM_SOLARIZED_PATH
+fi 
+
