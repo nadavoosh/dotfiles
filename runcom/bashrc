@@ -1,7 +1,12 @@
 # start virtualenvwrapper -- or don't, since it's slow
 source ~/.bashrc.virtualenvwrapper
+
 # add git prompt functionality
 source ~/.git-prompt.sh
+if [ -f ~/.git-completion.bash ]; then
+  source ~/.git-completion.bash
+fi
+
 # add virtualenv source
 export WORKON_HOME=~/Envs
 

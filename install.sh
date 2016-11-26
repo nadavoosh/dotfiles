@@ -7,16 +7,16 @@ DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 EXTRA_DIR="$HOME/.extra"
 
 # Update dotfiles itself first
-if [ ! -e $dotfiles/.git ]; then
+if [ ! -e $DOTFILES_DIR/.git ]; then
   echo "Cloning dotfiles"
-  git clone https://github.com/nadavoosh/dotfiles.git $dotfiles
+  git clone https://github.com/nadavoosh/dotfiles.git $DOTFILES_DIR
 else
   echo "Updating dotfiles"
 [ -d "$DOTFILES_DIR/.git" ] && git --work-tree="$DOTFILES_DIR" --git-dir="$DOTFILES_DIR/.git" pull origin master
 fi
 
 # install git bash support
-curl -L https://raw.github.com/git/git/master/contrib/completion/git-prompt.sh > ~/.bash_git
+curl -L https://raw.github.com/git/git/master/contrib/completion/git-prompt.sh > ~/.git-prompt.sh
 
 # bash
 echo "Setting up bash..."
