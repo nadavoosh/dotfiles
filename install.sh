@@ -16,7 +16,7 @@ else
 fi
 
 # install git bash support
-#curl -L https://raw.github.com/git/git/master/contrib/completion/git-prompt.sh > ~/.git-prompt.sh
+curl -L https://raw.github.com/git/git/master/contrib/completion/git-prompt.sh > ~/.git-prompt.sh
 
 # set up symlinks
 echo "Setting up symlinks..."
