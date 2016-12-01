@@ -18,17 +18,13 @@ fi
 # install git bash support
 curl -L https://raw.github.com/git/git/master/contrib/completion/git-prompt.sh > ~/.git-prompt.sh
 
-# bash
-echo "Setting up bash..."
-ln -sfv "$DOTFILES_DIR/runcom/bash_profile" ~/.bash_profile
-ln -sfv "$DOTFILES_DIR/runcom/bashrc" ~/.bashrc
-ln -sfv "$DOTFILES_DIR/runcom/bash_alias" ~/.bash_alias
-ln -sfv "$DOTFILES_DIR/runcom/bashrc.virtualenvwrapper" ~/.bashrc.virtualenvwrapper
-ln -sfv "$DOTFILES_DIR/runcom/prompt" ~/.prompt
-
-# vim
-echo "Setting up vim..."
-ln -sfv "$DOTFILES_DIR/vimrc" ~/.vimrc
+# set up symlinks
+echo "Setting up symlinks..."
+for src in $(find -H "$DOTFILES_DIR" -maxdepth 2 -name '*.symlink' -not -path '*.git*')
+do 
+  dst="$HOME/.$(basename "${src%.*}")"
+  ln -sfv "$src" "$dst"
+done
 
 export VUNDLE_PATH="$HOME/.vim/bundle/Vundle.vim"
 if [ ! -e $VUNDLE_PATH ]; then
