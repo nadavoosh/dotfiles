@@ -27,6 +27,12 @@ fi
 
 # Finally we can source the dotfiles (order matters)
 
-for DOTFILE in {bashrc,bash_alias,prompt,bashrc.virtualenvwrapper}; do
-  source ~/."$DOTFILE"
+# all of our files
+all_files=$DOTFILES_DIR/**/*.sh
+# load everything 
+for file in ${all_files}
+do
+  echo "Sourcing ${file}"
+  source $file
 done
+
