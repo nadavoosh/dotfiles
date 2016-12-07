@@ -1,7 +1,3 @@
-if [ -f ~/.git-completion.bash ]; then
-  source ~/.git-completion.bash
-fi
-
 # add virtualenv source
 export WORKON_HOME=~/Envs
 
@@ -9,6 +5,3 @@ export WORKON_HOME=~/Envs
 export CLICOLOR=1
 # Set colors to match iTerm2 Terminal Colors
 export TERM=xterm-256color
-
-export NVM_DIR="/Users/nadav/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
