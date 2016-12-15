@@ -27,8 +27,10 @@ fi
 
 # Finally we can source the dotfiles (order matters)
 
-# all of our files
-all_files=$DOTFILES_DIR/**/*.sh
+# turn on extglob
+shopt -s extglob
+# all of our non-install files
+all_files=$DOTFILES_DIR/**/!(install).sh
 # load everything 
 for file in ${all_files}
 do
