@@ -15,8 +15,12 @@ else
 [ -d "$DOTFILES_DIR/.git" ] && git --work-tree="$DOTFILES_DIR" --git-dir="$DOTFILES_DIR/.git" pull origin master
 fi
 
-# install git bash support
-curl -L https://raw.github.com/git/git/master/contrib/completion/git-prompt.sh > $DOTFILES_DIR/git/git-prompt.sh
+# install all installers
+for src in $(find -H "$DOTFILES_DIR" -depth 2 -name 'install.sh')
+do
+  echo "Installing $src"
+  . "$src"
+done
 
 # set up symlinks
 echo "Setting up symlinks..."
