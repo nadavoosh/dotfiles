@@ -1,0 +1,2 @@
+# ignore files which are downloaded into the $DOTFILES_DIR by the install scripts
+git/git-prompt.sh
