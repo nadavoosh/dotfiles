@@ -16,6 +16,7 @@ brew cask install 1password
 brew cask install spotify
 brew cask install fantastical
 brew cask install iterm2
+brew cask install bettertouchtool
 #brew cask install 'airmail'
 #brew cask install 'bear'
 
