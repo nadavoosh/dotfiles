@@ -15,6 +15,9 @@ else
 [ -d "$DOTFILES_DIR/.git" ] && git --work-tree="$DOTFILES_DIR" --git-dir="$DOTFILES_DIR/.git" pull origin master
 fi
 
+# install homebrew deps
+. Brewfile
+
 # install all installers
 for src in $(find -H "$DOTFILES_DIR" -depth 2 -name 'install.sh')
 do
