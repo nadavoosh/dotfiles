@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Install command-line tools
-xcode-select --install
-
 # Make sure we’re using the latest Homebrew
 brew update
 
@@ -10,10 +7,10 @@ brew update
 brew upgrade
 
 brew install python3
+brew install nvm
 brew tap caskroom/cask
 
 # install casks
-cask_args appdir: '/Applications'
 brew cask install google-chrome
 brew cask install 1password
 brew cask install spotify
