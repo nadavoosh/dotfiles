@@ -93,3 +93,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 ZSH_THEME="agnoster"
+DEFAULT_USER="nadav"
