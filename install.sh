@@ -7,13 +7,13 @@ DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 EXTRA_DIR="$HOME/.extra"
 
 # Update dotfiles itself first
-if [ ! -e $DOTFILES_DIR/.git ]; then
-  echo "Cloning dotfiles"
-  git clone https://github.com/nadavoosh/dotfiles.git $DOTFILES_DIR
-else
-  echo "Updating dotfiles"
-[ -d "$DOTFILES_DIR/.git" ] && git --work-tree="$DOTFILES_DIR" --git-dir="$DOTFILES_DIR/.git" pull origin master
-fi
+#if [ ! -e $DOTFILES_DIR/.git ]; then
+#  echo "Cloning dotfiles"
+#  git clone https://github.com/nadavoosh/dotfiles.git $DOTFILES_DIR
+#else
+#  echo "Updating dotfiles"
+#[ -d "$DOTFILES_DIR/.git" ] && git --work-tree="$DOTFILES_DIR" --git-dir="$DOTFILES_DIR/.git" pull origin master
+#fi
 
 # install homebrew deps
 . Brewfile
