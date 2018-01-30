@@ -1,7 +1,22 @@
 alias ..="cd .."
-alias reload="source ~/.bash_profile"
-alias devvpn="sudo /usr/local/Cellar/openvpn/2.3.7/sbin/openvpn ~/Downloads/devclient.ovpn"
-function title {
-    echo -ne "\033]0;"$*"\007"
+
+function reload {
+    if [ -n "$ZSH_VERSION" ]; then
+       # assume Zsh
+       source ~/.zlogin
+    elif [ -n "$BASH_VERSION" ]; then
+       # assume Bash
+       source ~/.bash_profile
+    fi
 }
+function title {
+    if [ -n "$ZSH_VERSION" ]; then
+       # assume Zsh
+       echo -ne "\e]1;"$*"\a"
+    elif [ -n "$BASH_VERSION" ]; then
+       # assume Bash
+       echo -ne "\033]1;"$*"\007"
+    fi
+}
+
 alias dotfiles="cd ~/.dotfiles"
