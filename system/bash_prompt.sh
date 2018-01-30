@@ -40,7 +40,7 @@ PROMPT_AFTER="$ "
 # Prompt command
 PROMPT_COMMAND='__git_ps1 "$PROMPT_BEFORE" "$PROMPT_AFTER"'
 
-# Git prompt features (read ~/.git-prompt.sh for reference)
+# Git prompt features (read ~/.git-bash_prompt.sh for reference)
 export GIT_PS1_SHOWDIRTYSTATE="false"
 export GIT_PS1_SHOWUPSTREAM="auto"
 export GIT_PS1_SHOWCOLORHINTS="true"

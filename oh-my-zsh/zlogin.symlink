@@ -33,7 +33,7 @@ CASE_SENSITIVE="true"
 # DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
@@ -94,3 +94,15 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 ZSH_THEME="agnoster"
 DEFAULT_USER="nadav"
+
+# turn on extglob
+setopt ksh_glob
+# all of our non-install files
+DOTFILES_DIR="$HOME/dev/dotfiles"
+all_files=($DOTFILES_DIR/**/!(install).sh)
+# load everything
+for file in ${all_files}
+do
+  echo "Sourcing ${file}"
+  source $file
+done

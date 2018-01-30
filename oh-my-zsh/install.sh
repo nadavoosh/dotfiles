@@ -4,4 +4,4 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 # get powerline fonts
 pip install --user powerline-status
 # install a font
-https://github.com/powerline/fonts
+# https://github.com/powerline/fonts
