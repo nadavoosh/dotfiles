@@ -20,3 +20,5 @@ function title {
 }
 
 alias dotfiles="cd ~/.dotfiles"
+alias pep8="autopep8 --in-place --aggressive --aggressive"
+alias pgrestart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log restart"

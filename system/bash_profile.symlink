@@ -43,3 +43,5 @@ export NVM_DIR="$DOTFILES_DIR/node/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 export PATH="$HOME/.yarn/bin:$PATH"
+
+complete -C /usr/local/bin/vault vault

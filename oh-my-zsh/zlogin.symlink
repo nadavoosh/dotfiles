@@ -106,3 +106,10 @@ do
   echo "Sourcing ${file}"
   source $file
 done
+
+
+# unshare history
+unsetopt share_history
+
+# set go path
+export PATH=$PATH:$(go env GOPATH)/bin
