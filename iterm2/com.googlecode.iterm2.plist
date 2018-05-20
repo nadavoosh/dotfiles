@@ -55,10 +55,14 @@
 	<true/>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>753 113 621 423 0 0 1440 877 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>2410 888 620 392 1440 0 2560 1577 </string>
+	<key>NSWindow Frame SessionsPreferences</key>
+	<string>115 137 606 469 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1752 824 796 473 1440 0 2560 1577 </string>
+	<string>114 218 937 512 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>285 252 834 549 0 0 1440 877 </string>
+	<string>0 90 1146 787 0 0 2560 1577 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>176 425 892 452 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -293,7 +297,7 @@
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
-			<string>No</string>
+			<string>Recycle</string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Description</key>
@@ -839,6 +843,8 @@
 	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>537084879.40617394</real>
+	<key>PMPrintingExpandedStateForPrint2</key>
+	<false/>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -874,6 +880,8 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/nadav/dev/dotfiles/iterm2</string>
+	<key>Print In Black And White</key>
+	<true/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
@@ -883,14 +891,16 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-01-23T19:16:53Z</date>
+	<date>2018-04-27T21:31:39Z</date>
 	<key>SUSendProfileInfo</key>
+	<false/>
+	<key>ShowFullScreenTabBar</key>
 	<false/>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.1.5</string>
+	<string>3.1.6</string>
 </dict>
 </plist>

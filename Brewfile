@@ -8,6 +8,7 @@ brew upgrade
 
 brew install python3
 brew install nvm
+brew install ack
 brew tap caskroom/cask
 
 # install casks
