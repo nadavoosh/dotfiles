@@ -12,15 +12,25 @@
 	<string>manual</string>
 	<key>Default Bookmark Guid</key>
 	<string>B380CE34-0D4D-474D-B430-82115F2BE155</string>
+	<key>Hotkey</key>
+	<true/>
+	<key>HotkeyChar</key>
+	<integer>32</integer>
+	<key>HotkeyCode</key>
+	<integer>49</integer>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
+	<key>HotkeyModifiers</key>
+	<integer>524288</integer>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSFontPanelAttributes</key>
 	<string>1, 0</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/dev/dotfiles</string>
+	<string>~</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
+	<string>{712, 448}</string>
+	<key>NSNavPanelExpandedSizeForSaveMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
@@ -56,13 +66,13 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>753 113 621 423 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>410 386 620 392 0 0 1440 877 </string>
+	<string>410 382 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>1709 372 606 469 1440 0 2560 1577 </string>
+	<string>269 318 606 469 0 0 2560 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>114 218 937 512 0 0 1440 877 </string>
+	<string>312 422 796 486 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1440 85 1274 1492 1440 0 2560 1577 </string>
+	<string>1957 -273 1440 798 1440 -540 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>176 389 650 477 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -778,7 +788,7 @@
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
-			<integer>1000</integer>
+			<integer>5000</integer>
 			<key>Selected Text Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -891,7 +901,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-08-01T17:15:52Z</date>
+	<date>2019-03-08T22:45:08Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
@@ -903,6 +913,6 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.1.7</string>
+	<string>3.2.7</string>
 </dict>
 </plist>
