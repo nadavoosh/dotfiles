@@ -45,3 +45,8 @@ export NVM_DIR="$DOTFILES_DIR/node/.nvm"
 export PATH="$HOME/.yarn/bin:$PATH"
 
 complete -C /usr/local/bin/vault vault
+
+
+# append to the history file, don't overwrite it. also, do so on every command (don't lose history)
+shopt -s histappend
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
